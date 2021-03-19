@@ -1,0 +1,3 @@
+/home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/poo_152.dir
