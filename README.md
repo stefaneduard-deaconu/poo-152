@@ -1,6 +1,6 @@
 # Laboratorul de POO, grupa 152, anul 2021
 
-# Etapa 1 - Clase de Baza
+<h1 style="color: #0c90cf; font-weight: bolder">Etapa 1 - Clase de Baza</h1>
 
 In prima etapa vreau sa ne axam strict pe sintaxa de baza a limbajului,
     ca sa ne insusim clar ce inseamna membru/static, alocat static/dinamic,
@@ -41,6 +41,7 @@ Necesar este sa **folositi** si alocarea dinamica in cel putin 2 dintre
 
 ### 1. Constructori
 <div id="1-constructors"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 <i>Pe scurt, constructorii ii consideram ca niste metode de initializare a obiectului, care 
 seteaza niste date in obiectele dintr-o clasa.</i>
@@ -106,7 +107,7 @@ Dupa cum vedem, constructorii sunt supraincarcati. Aceasta suprapunere a scopuri
 
 **TODO** valori default parametri - poate fi dat la examen scris? - [Overlapping constructors](https://www.learncpp.com/cpp-tutorial/overlapping-and-delegating-constructors/)
 
-**TODO** exerseaza.. :smile
+**TODO** exerseaza.. :smile:
 
 ### 2. Operatorul =
 <div id=-operator="></div>
