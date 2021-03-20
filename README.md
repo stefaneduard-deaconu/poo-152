@@ -70,14 +70,14 @@ Indiferent de asta, constructorul cu parametri are unicul rol de a copia valoril
 
 Spre exemplu:
 
-    Fraction(int a, int b) {
+    Fraction(const int a, const int b) {
         m_a = a;
         m_b = b;
     }
 
 Scris si cu lista de initializari
 
-    Fraction(int a, int b) : m_a(a), m_b(b) {
+    Fraction(const int a, const int b) : m_a(a), m_b(b) {
             // m_a(a)    este echivalen cu    m_a = a;
         }
 
@@ -90,13 +90,15 @@ Dupa cum vedem, constructorii sunt supraincarcati. Aceasta suprapunere a scopuri
     /**
      * Un vector din 3 elemente
      */
-    class  Vector3 {
+    class  Vector3 { // const il folosim atat pentru a intari ideea ca un constructor doar \
+            copieaza valori din A in B, cat si pentru a se completa cu const Obiect&,
+            folosit la transmiterea obiectelor cand aceastea nu sunt modificate de catre functii
     public:
         Vector3() : m_v1(0), m_v2(0), m_v3(0) {}
 
-        Vector3(float first, float second) : m_v1(first), m_v2(second), m_v3(0) {}
+        Vector3(const float first, const float second) : m_v1(first), m_v2(second), m_v3(0) {}
 
-        Vector3(float first, float second, float third) : Vector3(first, second) {
+        Vector3(const float first, const float second, const float third) : Vector3(first, second) {
             m_v3 = third;
         }
 
@@ -104,6 +106,30 @@ Dupa cum vedem, constructorii sunt supraincarcati. Aceasta suprapunere a scopuri
         //  prin a delega intotdeauna constructorului cu toti parametrii:
         Vector3(const Vector3& v3) : Vector3(v3.m_v1, v3.m_v2, v3.m_v3) {}
     }
+
+Apelurile catre constructori **Vector3** pot fi:
+    
+    Vector3 v(1,2);     // apeleaza constructorul cu doi parametri
+    Vector3 w{1,2};     // identic cu precedentul
+    
+    Vector3 t{1,2,3};   // apeleaza constructorul cu 3 parametri, deci se va executa in ordine: \
+        delegarea constructorului cu 2 parametri Vector3(1,2) care seteaza campurile m_v1, m_v2 cu valorile si m_v3 cu 0, \
+        iar apoi se executa m_v3 = third; BINEINTELES, aici desi am redus codul am setat campul third de doua ori.
+
+Apeluri catre constructorul de copiere:
+
+    // 1 functie care transmite un Vector3 prin valoare:
+    void multiply(Vector3 v, floar scalar) {
+        // pentru a crea variabile temporara v trebuie facuta o copie a obiectului transmis (COPY CONSTRUCTOR ;))
+        // ...
+    }
+    
+    // 2 initializare cu un alt obiect
+    Vector3 ones{1,1,1};
+    Vector3 onesCopy = ones;
+    
+    
+**TODO** non-static initialization
 
 **TODO** valori default parametri - poate fi dat la examen scris? - [Overlapping constructors](https://www.learncpp.com/cpp-tutorial/overlapping-and-delegating-constructors/)
 
