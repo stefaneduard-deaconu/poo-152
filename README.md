@@ -111,39 +111,59 @@ Dupa cum vedem, constructorii sunt supraincarcati. Aceasta suprapunere a scopuri
 
 ### 2. Operatorul =
 <div id=-operator="></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
 
 ### 3. Constructorul de copiere - cc
 <div id="1-cc"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
 
 ### 4. Destructor
 <div id="1-destructor"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 
-### 5. Alocare dinamica
+
+### Alocare dinamica
 <div id="1-dynamic-allocation"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
+
+
+### 5. Metode de Accesare (getters and setters) 
+<div id="1-getset"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 
 ### 6. const
-<div id="1-getset"></div>
+<div id="1-const"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
 
 ### 7. friend
-<div id="1-const"></div>
+<div id="1-friend"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
 
 ### 8. static
-<div id="1-friend"></div>
+<div id="1-static"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
 
 ### 9. Metode supraincarcate
-<div id="1-static"></div>
+<div id="1-overloaded-methods"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
 
 ### 10. Operatori supraincarcati
-<div id="1-overloaded-methods"></div>
-
-
 <div id="1-overloaded-operators"></div>
+Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
 
