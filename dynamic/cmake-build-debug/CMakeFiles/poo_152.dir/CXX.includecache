@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stefan/Desktot/poo-152/dynamic/Person.h
+cstring
+-
+
+/home/stefan/Desktot/poo-152/dynamic/PersonArray.cpp
+PersonArray.h
+/home/stefan/Desktot/poo-152/dynamic/PersonArray.h
+
+/home/stefan/Desktot/poo-152/dynamic/PersonArray.h
+Person.h
+/home/stefan/Desktot/poo-152/dynamic/Person.h
+
+/home/stefan/Desktot/poo-152/dynamic/main.cpp
+Person.h
+/home/stefan/Desktot/poo-152/dynamic/Person.h
+PersonArray.h
+/home/stefan/Desktot/poo-152/dynamic/PersonArray.h
+vector
+-
+cmath
+-
+

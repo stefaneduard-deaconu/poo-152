@@ -68,10 +68,10 @@ RM = /snap/clion/145/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stefan/Desktot/poo-152
+CMAKE_SOURCE_DIR = /home/stefan/Desktot/poo-152/dynamic
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stefan/Desktot/poo-152/cmake-build-debug
+CMAKE_BINARY_DIR = /home/stefan/Desktot/poo-152/dynamic/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles /home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/Desktot/poo-152/dynamic/cmake-build-debug/CMakeFiles /home/stefan/Desktot/poo-152/dynamic/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stefan/Desktot/poo-152/dynamic/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,59 +143,59 @@ poo_152/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/build
 .PHONY : poo_152/fast
 
-dynamic/Person.o: dynamic/Person.cpp.o
+Person.o: Person.cpp.o
 
-.PHONY : dynamic/Person.o
-
-# target to build an object file
-dynamic/Person.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/dynamic/Person.cpp.o
-.PHONY : dynamic/Person.cpp.o
-
-dynamic/Person.i: dynamic/Person.cpp.i
-
-.PHONY : dynamic/Person.i
-
-# target to preprocess a source file
-dynamic/Person.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/dynamic/Person.cpp.i
-.PHONY : dynamic/Person.cpp.i
-
-dynamic/Person.s: dynamic/Person.cpp.s
-
-.PHONY : dynamic/Person.s
-
-# target to generate assembly for a file
-dynamic/Person.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/dynamic/Person.cpp.s
-.PHONY : dynamic/Person.cpp.s
-
-dynamic/PersonArray.o: dynamic/PersonArray.cpp.o
-
-.PHONY : dynamic/PersonArray.o
+.PHONY : Person.o
 
 # target to build an object file
-dynamic/PersonArray.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/dynamic/PersonArray.cpp.o
-.PHONY : dynamic/PersonArray.cpp.o
+Person.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/Person.cpp.o
+.PHONY : Person.cpp.o
 
-dynamic/PersonArray.i: dynamic/PersonArray.cpp.i
+Person.i: Person.cpp.i
 
-.PHONY : dynamic/PersonArray.i
+.PHONY : Person.i
 
 # target to preprocess a source file
-dynamic/PersonArray.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/dynamic/PersonArray.cpp.i
-.PHONY : dynamic/PersonArray.cpp.i
+Person.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/Person.cpp.i
+.PHONY : Person.cpp.i
 
-dynamic/PersonArray.s: dynamic/PersonArray.cpp.s
+Person.s: Person.cpp.s
 
-.PHONY : dynamic/PersonArray.s
+.PHONY : Person.s
 
 # target to generate assembly for a file
-dynamic/PersonArray.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/dynamic/PersonArray.cpp.s
-.PHONY : dynamic/PersonArray.cpp.s
+Person.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/Person.cpp.s
+.PHONY : Person.cpp.s
+
+PersonArray.o: PersonArray.cpp.o
+
+.PHONY : PersonArray.o
+
+# target to build an object file
+PersonArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/PersonArray.cpp.o
+.PHONY : PersonArray.cpp.o
+
+PersonArray.i: PersonArray.cpp.i
+
+.PHONY : PersonArray.i
+
+# target to preprocess a source file
+PersonArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/PersonArray.cpp.i
+.PHONY : PersonArray.cpp.i
+
+PersonArray.s: PersonArray.cpp.s
+
+.PHONY : PersonArray.s
+
+# target to generate assembly for a file
+PersonArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/poo_152.dir/build.make CMakeFiles/poo_152.dir/PersonArray.cpp.s
+.PHONY : PersonArray.cpp.s
 
 main.o: main.cpp.o
 
@@ -233,12 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... poo_152"
-	@echo "... dynamic/Person.o"
-	@echo "... dynamic/Person.i"
-	@echo "... dynamic/Person.s"
-	@echo "... dynamic/PersonArray.o"
-	@echo "... dynamic/PersonArray.i"
-	@echo "... dynamic/PersonArray.s"
+	@echo "... Person.o"
+	@echo "... Person.i"
+	@echo "... Person.s"
+	@echo "... PersonArray.o"
+	@echo "... PersonArray.i"
+	@echo "... PersonArray.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

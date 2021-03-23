@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/poo_152.dir/main.cpp.o CMakeFiles/poo_152.dir/Person.cpp.o CMakeFiles/poo_152.dir/PersonArray.cpp.o  -o poo_152 

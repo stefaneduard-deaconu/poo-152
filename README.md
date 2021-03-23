@@ -153,11 +153,104 @@ Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">
 
 
 
-### Alocare dinamica
+### *Alocare dinamica :wink:
 <div id="1-dynamic-allocation"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
+*De ce am vrea alocare dinamica?\
+In primul rand, deoarece ofera __dinamism__ mai mare: nu trebuie sa stim numarul de elemente 
+in cazul vectorilor dinamici. Este probabil ca un obiect mare precum o baza de date
+sa aiba datele membre salvate in fisiere separate. Este foarte util sa le citim separat si sa
+le alocam si retinem intr-un simplu pointer usor de copiat dupa in obiectul mare.\
+\
+In etapa 2 si in general in C++ de calitate, pointerii si alocarea dinamica sunt necesare 
+pentru a retine date similare intr-un singur vector, deci permite libertate in programare.__TODO link dynamic polymorphism__*
 
+1. char* [:link:](#dynamic-charstar)
+2. PersonArray - operator[], operator+= [:link:](#dynamic-array)
+
+In primul rand, vom scrie o clasa Persoan care contine un sir de caractere alocat dinamic.
+De ce? Pentru a putea sa aiba si nume portugheze fara sa ne *caram* cu suta de caractere dupa noi :). 
+<div id="dynamic-charstar"></div>
+
+    class Person {
+    public:
+        // constructors
+        Person();
+        Person(const char *name);
+        // CC
+        Person(const Person& p);
+        // operator=
+        Person& operator=(const Person& p);
+        // setter
+        void setName(const char* name);
+        // destructor
+        ~Person();
+    private:
+        char* m_name;
+    };
+
+Iar codul, continum in namespace-ul **dynamic** este:
+
+
+    dynamic::Person::Person(const char *name) :
+            m_name(nullptr) {
+        if (name) { // if name is nullptr, then m_name already got nullptr from the initializer list
+            m_name = new char[strlen(name) + 1];
+            strcpy(m_name, name);
+        }
+    }
+    
+    dynamic::Person::Person() : m_name(nullptr) {}
+    
+    // delegating constructor for CC
+    dynamic::Person::Person(const dynamic::Person &p) : Person(p.m_name) {}
+    
+    void dynamic::Person::setName(const char *name) {
+        delete[] m_name;        // same as destructor, m_name was either allocated or nullptr
+        if (name) {             // if name is nullptr, then m_name already got nullptr from the initializer list
+            m_name = new char[strlen(name) + 1];
+            strcpy(m_name, name);
+        } else {
+            m_name = nullptr;   // delete[] doesn't change m_name's value, it only frees the memory it points to
+        }
+    }
+    
+    dynamic::Person::~Person() {
+        delete[] m_name; // delete[] does NOT give error when m_name is nullptr, but we have to make sure that \
+            at the end of the object's lifecycle (delete if dynamically allocated, or the end of the scope in which\
+            it was declared) it doesn't point to memory we don't own (more exactly, the program doesn't)
+    }
+    
+    // You can think ok returning Person& as "not making useless copies with all of the object's bytes" ..when a = b = c = d;
+    dynamic::Person &dynamic::Person::operator=(const dynamic::Person &p) {
+        // using the setter already implemented for dynamic char* :D
+        setName(p.m_name);
+        // or copying the same code, here, because we won't always implement the setter ;)
+        /*
+            delete[] m_name; // same as destructor, m_name was either allocated or nullptr
+            if (name) { // if name is nullptr, then m_name already got nullptr from the initializer list
+                m_name = new char[strlen(name) + 1];
+                strcpy(m_name, name);
+            } else {
+                m_name = nullptr; // delete[] doesn't change m_name's value, it only frees the memory it points to
+            }
+         */
+        // necessary for chained operator=    ---->    a = b = c;
+        return *this;
+    }
+
+#### Clasa PersonArray - exemple [], +=
+<div id="dynamic-array"></div>
+
+    class PersonArray {
+    public:
+        PersonArray();
+        PersonArray(const PersonArray& pa);
+    private:
+        Person *m_data;
+        int m_size;
+    }
 
 ### 5. Metode de Accesare (getters and setters) 
 <div id="1-getset"></div>

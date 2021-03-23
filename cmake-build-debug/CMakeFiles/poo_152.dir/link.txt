@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/poo_152.dir/main.cpp.o  -o poo_152 
+/usr/bin/c++  -g   CMakeFiles/poo_152.dir/main.cpp.o CMakeFiles/poo_152.dir/dynamic/Person.cpp.o CMakeFiles/poo_152.dir/dynamic/PersonArray.cpp.o  -o poo_152 

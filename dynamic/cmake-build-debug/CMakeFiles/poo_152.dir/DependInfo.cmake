@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/stefan/Desktot/poo-152/dynamic/Person.cpp" "/home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/poo_152.dir/dynamic/Person.cpp.o"
-  "/home/stefan/Desktot/poo-152/dynamic/PersonArray.cpp" "/home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/poo_152.dir/dynamic/PersonArray.cpp.o"
-  "/home/stefan/Desktot/poo-152/main.cpp" "/home/stefan/Desktot/poo-152/cmake-build-debug/CMakeFiles/poo_152.dir/main.cpp.o"
+  "/home/stefan/Desktot/poo-152/dynamic/Person.cpp" "/home/stefan/Desktot/poo-152/dynamic/cmake-build-debug/CMakeFiles/poo_152.dir/Person.cpp.o"
+  "/home/stefan/Desktot/poo-152/dynamic/PersonArray.cpp" "/home/stefan/Desktot/poo-152/dynamic/cmake-build-debug/CMakeFiles/poo_152.dir/PersonArray.cpp.o"
+  "/home/stefan/Desktot/poo-152/dynamic/main.cpp" "/home/stefan/Desktot/poo-152/dynamic/cmake-build-debug/CMakeFiles/poo_152.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

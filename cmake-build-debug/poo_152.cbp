@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/stefan/Desktot/poo-152/dynamic/Person.cpp">
+			<Option target="poo_152"/>
+		</Unit>
+		<Unit filename="/home/stefan/Desktot/poo-152/dynamic/Person.h">
+			<Option target="poo_152"/>
+		</Unit>
+		<Unit filename="/home/stefan/Desktot/poo-152/dynamic/PersonArray.cpp">
+			<Option target="poo_152"/>
+		</Unit>
+		<Unit filename="/home/stefan/Desktot/poo-152/dynamic/PersonArray.h">
+			<Option target="poo_152"/>
+		</Unit>
 		<Unit filename="/home/stefan/Desktot/poo-152/main.cpp">
 			<Option target="poo_152"/>
 		</Unit>
