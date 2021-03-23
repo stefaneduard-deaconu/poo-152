@@ -1,6 +1,14 @@
 # Laboratorul de POO, grupa 152, anul 2021
 
-<h1 style="color: #0c90cf; font-weight: bolder">Etapa 1 - Clase de Baza</h1>
+# Clipul zilei 😉
+
+## Use CLion to Import Our Laboratory
+
+![Laboratory](https://user-images.githubusercontent.com/33592406/112233710-8e1e9b00-8c43-11eb-9b2f-c9fccd54e73e.mp4)
+
+# Etapa 1 - Clase de Baza
+
+
 
 In prima etapa vreau sa ne axam strict pe sintaxa de baza a limbajului, ca sa ne insusim clar ce inseamna membru/static,
 alocat static/dinamic, constructori si alte metode mai speciale, lista de initializari si delegare de constructori,
