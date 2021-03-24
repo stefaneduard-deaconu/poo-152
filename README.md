@@ -2,7 +2,7 @@
 
 # Clipul zilei 😉
 
-## Use CLion to Import Our Laboratory
+## Use CLion to Import Our Laboratory - the simple method 😄
 
 ![Laboratory](https://user-images.githubusercontent.com/33592406/112233710-8e1e9b00-8c43-11eb-9b2f-c9fccd54e73e.mp4)
 
