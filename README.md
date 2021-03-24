@@ -4,7 +4,8 @@
 
 ## Use CLion to Import Our Laboratory - the simple method 😄
 
-![Laboratory](https://user-images.githubusercontent.com/33592406/112233710-8e1e9b00-8c43-11eb-9b2f-c9fccd54e73e.mp4)
+![Use Clion - Thumbnail](https://user-images.githubusercontent.com/33592406/112241117-4d7a4e00-8c52-11eb-8cd6-be60ceb94f48.gif)
+![Watch](https://user-images.githubusercontent.com/33592406/112233710-8e1e9b00-8c43-11eb-9b2f-c9fccd54e73e.mp4)
 
 # Etapa 1 - Clase de Baza
 
