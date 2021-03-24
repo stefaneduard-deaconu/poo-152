@@ -43,9 +43,11 @@ un vector alocat dinamic de elemente, sau la un membru de tip obiect)
 
 ## Explicatii si exemple
 
-### 1. Constructori
 
 <div id="1-constructors"></div>
+
+### 1. Constructori
+
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 <i>Pe scurt, constructorii ii consideram ca niste metode de initializare a obiectului, care seteaza niste date in
@@ -95,12 +97,14 @@ aproape complet prin delegarea altor constructori.
     /**
      * Un vector din 3 elemente
      */
-    class  Vector3 { // const il folosim atat pentru a intari ideea ca un constructor doar \
-            copieaza valori din A in B, cat si pentru a se completa cu const Obiect&,
-            folosit la transmiterea obiectelor cand aceastea nu sunt modificate de catre functii
+    class  Vector3 {
     public:
         Vector3() : m_v1(0), m_v2(0), m_v3(0) {}
-
+        
+        /* const il folosim atat pentru a intari ideea ca un constructor doar 
+         * copieaza valori din A in B, cat si pentru a se completa cu const Obiect&,
+         * folosit la transmiterea obiectelor cand aceastea nu sunt modificate de catre functii
+         */
         Vector3(const float first, const float second) : m_v1(first), m_v2(second), m_v3(0) {}
 
         Vector3(const float first, const float second, const float third) : Vector3(first, second) {
@@ -140,9 +144,10 @@ Apeluri catre constructorul de copiere:
 
 **TODO** exerseaza.. :smile:
 
+<div id="1-operator="></div>
+
 ### 2. Operatorul =
 
-<div id="1-operator="></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 Atat constructorul de copiere cat si constructorul de copiere trebuie sa faca o copie a obiectului. Prin urmare
@@ -156,9 +161,10 @@ In cazul in care avem nevoie sa realocam un camp de tip array, este posibil sa n
 toate elementele. Am exemplificat asta in clasa PersonArray care in mod automat creste exponential (prin a se dubla
 numarul maxim de elemente) in lungime cand adaugam elemente noi.
 
+<div id="1-cc"></div>
+
 ### 3. Constructorul de copiere - cc
 
-<div id="1-cc"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 Constructorul de copiere este la fel de straightforward precum toti constructorii - initializeaza toti membrii cu
@@ -183,9 +189,10 @@ a-l delega din CC:
 
     NumeClasa(const NumeClasa& src) : NumeClasa(src.m_a, src.m_b) {}
 
+<div id="1-destructor"></div>
+
 ### 4. Destructor
 
-<div id="1-destructor"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 Destructorul este simplu de implementat. Pur si simplu folosesti \
@@ -210,9 +217,10 @@ pur si simplu sa scrii:
 Pentru a vedea ce metode sunt necesare si unde pot fi modificati pointerii dintr-un obiect, avem exemple in sectiunea
 urmatoare:
 
+<div id="1-dynamic-allocation"></div>
+
 ### *Alocare dinamica :wink:
 
-<div id="1-dynamic-allocation"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 *De ce am vrea alocare dinamica?\
@@ -319,34 +327,40 @@ In all other cases, use add and addAll or sth similar*
         int m_size;
     }
 
+<div id="1-getset"></div>
+
 ### 5. Metode de Accesare (getters and setters)
 
-<div id="1-getset"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
+<div id="1-const"></div>
 
 ### 6. const
 
-<div id="1-const"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
+<div id="1-friend"></div>
 
 ### 7. friend
 
-<div id="1-friend"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
+<div id="1-static"></div>
 
 ### 8. static
 
-<div id="1-static"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
+<div id="1-overloaded-methods"></div>
 
 ### 9. Metode supraincarcate
 
-<div id="1-overloaded-methods"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
+
+<div id="1-overloaded-operators"></div>
 
 ### 10. Operatori supraincarcati
 
-<div id="1-overloaded-operators"></div>
 Inapoi la <a href="#1-requirements" style="color: #0c90cf; font-weight: bolder">Cerinte :link:</a>
 
 
