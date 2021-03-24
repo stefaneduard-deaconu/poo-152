@@ -7,16 +7,15 @@
 ![Use Clion - Thumbnail](https://user-images.githubusercontent.com/33592406/112241117-4d7a4e00-8c52-11eb-8cd6-be60ceb94f48.gif)
 ![Watch](https://user-images.githubusercontent.com/33592406/112233710-8e1e9b00-8c43-11eb-9b2f-c9fccd54e73e.mp4)
 
+<span id="1-requirements"></span>**cerintele**:
+
 # Etapa 1 - Clase de Baza
-
-
 
 In prima etapa vreau sa ne axam strict pe sintaxa de baza a limbajului, ca sa ne insusim clar ce inseamna membru/static,
 alocat static/dinamic, constructori si alte metode mai speciale, lista de initializari si delegare de constructori,
 const etc
 
 Inainte de a da si alte exemple, important este sa vedem care sunt
-<span id="1-requirements"></span>**cerintele**:
 
 1. [Constructori – fara parametri (default) si cu toti parametrii](#1-constructors)
 2. [**Operatorul =*](#1-operator=)
